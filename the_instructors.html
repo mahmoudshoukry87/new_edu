@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Instructors - EduPro</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/the_instructors.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+<!-- Header Section -->
+<header class="header">
+    <div class="container">
+        <div class="logo">
+            <a href="index.html">
+                <img src="https://cdn-icons-png.flaticon.com/512/2436/2436874.png" alt="EduPro Logo">
+                <span>EduPro</span>
+            </a>
+        </div>
+        
+        <!-- Mobile Menu Button -->
+        <div class="mobile-menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="the_instructors.html" class="active">Instructors</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <!-- Auth Buttons or User Profile -->
+        <div class="auth-buttons">
+            <div class="guest-buttons">
+                <button class="btn-login" onclick="window.location.href='login.html'">Log In</button>
+                <button class="btn-register" onclick="window.location.href='register.html'">Sign Up</button>
+            </div>
+            <div class="user-profile" style="display: none;">
+                <div class="user-menu">
+                    <img src="https://github.com/mahmoudshoukry87.png" alt="User Profile" class="profile-pic">
+                    <span class="username">mahmoudshoukry87</span>
+                    <i class="fas fa-chevron-down"></i>
+                    <div class="dropdown-menu">
+                        <a href="profile.html"><i class="fas fa-user"></i> My Profile</a>
+                        <a href="my-courses.html"><i class="fas fa-graduation-cap"></i> My Courses</a>
+                        <a href="settings.html"><i class="fas fa-cog"></i> Settings</a>
+                        <a href="#" class="logout"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+    <!-- Main Content -->
+    <main class="instructors-page">
+        <div class="container">
+            <div class="page-header">
+                <h1>Our Expert Instructors</h1>
+                <p>Learn from industry experts who share their knowledge and real experiences</p>
+            </div>
+
+            <div class="instructors-grid">
+                <!-- Instructor 1 -->
+                <div class="instructor-card" data-instructor="1">
+                    <div class="instructor-avatar">
+                        <img src="https://randomuser.me/api/portraits/men/41.jpg" alt="Mahmoud Shoukry">
+                    </div>
+                    <h3>Mahmoud Shoukry</h3>
+                    <p>Web Development Expert</p>
+                </div>
+            
+                <!-- Instructor 2 -->
+                <div class="instructor-card" data-instructor="2">
+                    <div class="instructor-avatar">
+                        <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Sarah Wilson">
+                    </div>
+                    <h3>Sarah Wilson</h3>
+                    <p>UI/UX Design Specialist</p>
+                </div>
+            
+                <!-- Instructor 3 -->
+                <div class="instructor-card" data-instructor="3">
+                    <div class="instructor-avatar">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Ahmed Hassan">
+                    </div>
+                    <h3>Ahmed Hassan</h3>
+                    <p>Mobile Development Expert</p>
+                </div>
+            
+                <!-- Instructor 4 -->
+                <div class="instructor-card" data-instructor="4">
+                    <div class="instructor-avatar">
+                        <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Emily Parker">
+                    </div>
+                    <h3>Emily Parker</h3>
+                    <p>Data Science Instructor</p>
+                </div>
+            
+                <!-- Instructor 5 -->
+                <div class="instructor-card" data-instructor="5">
+                    <div class="instructor-avatar">
+                        <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="Michael Brown">
+                    </div>
+                    <h3>Michael Brown</h3>
+                    <p>DevOps Engineer</p>
+                </div>
+            
+                <!-- Instructor 6 -->
+                <div class="instructor-card" data-instructor="6">
+                    <div class="instructor-avatar">
+                        <img src="https://randomuser.me/api/portraits/women/29.jpg" alt="Lisa Zhang">
+                    </div>
+                    <h3>Lisa Zhang</h3>
+                    <p>AI & Machine Learning</p>
+                </div>
+            
+                <!-- Instructor 7 -->
+                <div class="instructor-card" data-instructor="7">
+                    <div class="instructor-avatar">
+                        <img src="https://randomuser.me/api/portraits/men/55.jpg" alt="James Wilson">
+                    </div>
+                    <h3>James Wilson</h3>
+                    <p>Cybersecurity Expert</p>
+                </div>
+            
+                <!-- Instructor 8 -->
+                <div class="instructor-card" data-instructor="8">
+                    <div class="instructor-avatar">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Maria Garcia">
+                    </div>
+                    <h3>Maria Garcia</h3>
+                    <p>Frontend Development</p>
+                </div>
+            
+                <!-- Instructor 9 -->
+                <div class="instructor-card" data-instructor="9">
+                    <div class="instructor-avatar">
+                        <img src="https://randomuser.me/api/portraits/men/77.jpg" alt="David Kim">
+                    </div>
+                    <h3>David Kim</h3>
+                    <p>Backend Development</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+<!-- Instructor Modal -->
+<div class="instructor-modal" id="instructorModal">
+    <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <div class="modal-body">
+            <div class="instructor-profile">
+                <div class="profile-header">
+                    <!-- تحديث مسار الصورة الافتراضية -->
+                    <img src="https://randomuser.me/api/portraits/men/41.jpg" alt="" class="modal-instructor-image">
+                    <div class="profile-info">
+                        <h2 class="modal-instructor-name"></h2>
+                        <p class="modal-instructor-title"></p>
+                    </div>
+                </div>
+                <div class="profile-body">
+                    <p class="modal-instructor-bio"></p>
+                    <div class="instructor-stats">
+                        <div class="stat">
+                            <span class="number">4.9</span>
+                            <span class="label">Rating</span>
+                        </div>
+                        <div class="stat">
+                            <span class="number">15</span>
+                            <span class="label">Courses</span>
+                        </div>
+                        <div class="stat">
+                            <span class="number">2.3k</span>
+                            <span class="label">Students</span>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" target="_blank" class="linkedin"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" target="_blank" class="twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" target="_blank" class="github"><i class="fab fa-github"></i></a>
+                        <a href="#" target="_blank" class="website"><i class="fas fa-globe"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <!-- Footer content same as other pages -->
+    </footer>
+
+    <script src="js/the_instructors.js"></script>
+</body>
+</html>

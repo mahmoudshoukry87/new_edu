@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instructor Dashboard - EduPro</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/instructor-dashboard.css">
+    <link rel="stylesheet" href="css/header.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+ <!-- Header Section -->
+ <header class="header">
+    <div class="container">
+        <div class="logo">
+            <a href="index.html">
+                <img src="https://cdn-icons-png.flaticon.com/512/2436/2436874.png" alt="EduPro Logo">
+                <span>EduPro</span>
+            </a>
+        </div>
+        
+        <!-- Mobile Menu Button -->
+        <div class="mobile-menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="the_instructors.html">Instructors</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <!-- Auth Buttons or User Profile -->
+        <div class="auth-buttons">
+            <div class="guest-buttons">
+                <button class="btn-login" onclick="window.location.href='login.html'">Log In</button>
+                <button class="btn-register" onclick="window.location.href='register.html'">Sign Up</button>
+            </div>
+            <div class="user-profile" style="display: none;">
+                <div class="user-menu">
+                    <img src="https://github.com/mahmoudshoukry87.png" alt="User Profile" class="profile-pic">
+                    <span class="username">mahmoudshoukry87</span>
+                    <i class="fas fa-chevron-down"></i>
+                    <div class="dropdown-menu">
+                        <a href="profile.html"><i class="fas fa-user"></i> My Profile</a>
+                        <a href="my-courses.html"><i class="fas fa-graduation-cap"></i> My Courses</a>
+                        <a href="settings.html"><i class="fas fa-cog"></i> Settings</a>
+                        <a href="#" class="logout"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+    <main class="dashboard-section">
+        <div class="container">
+            <!-- Instructor Sidebar -->
+            <aside class="instructor-sidebar">
+                <div class="instructor-info">
+                    <div class="profile-image">
+                        <img src="https://github.com/mahmoudshoukry87.png" alt="Instructor Profile">
+                        <button class="change-photo">
+                            <i class="fas fa-camera"></i>
+                        </button>
+                    </div>
+                    <h3>Mahmoud Shoukry</h3>
+                    <p class="instructor-title">Web Development Instructor</p>
+                    <div class="instructor-stats">
+                        <div class="stat">
+                            <i class="fas fa-users"></i>
+                            <span>1,234 Students</span>
+                        </div>
+                        <div class="stat">
+                            <i class="fas fa-star"></i>
+                            <span>4.8 Rating</span>
+                        </div>
+                    </div>
+                </div>
+
+                <nav class="dashboard-nav">
+                    <a href="#overview" class="active">
+                        <i class="fas fa-th-large"></i>
+                        Dashboard Overview
+                    </a>
+                    <a href="#courses">
+                        <i class="fas fa-book"></i>
+                        My Courses
+                    </a>
+                    <a href="#new-course">
+                        <i class="fas fa-plus-circle"></i>
+                        Create New Course
+                    </a>
+                    <a href="#earnings">
+                        <i class="fas fa-dollar-sign"></i>
+                        Earnings
+                    </a>
+                    <a href="#reviews">
+                        <i class="fas fa-star"></i>
+                        Reviews
+                    </a>
+                    <a href="#settings">
+                        <i class="fas fa-cog"></i>
+                        Settings
+                    </a>
+                    <button class="logout-btn">
+                        <i class="fas fa-sign-out-alt"></i>
+                        Logout
+                    </button>
+                </nav>
+            </aside>
+
+            <!-- Dashboard Content -->
+            <div class="dashboard-content">
+                <!-- Overview Section -->
+                <section id="overview" class="content-section">
+                    <h2>Dashboard Overview</h2>
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div class="stat-details">
+                                <h3>Total Courses</h3>
+                                <p>12</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="stat-details">
+                                <h3>Total Students</h3>
+                                <p>1,234</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-dollar-sign"></i>
+                            </div>
+                            <div class="stat-details">
+                                <h3>Total Earnings</h3>
+                                <p>$15,680</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="stat-details">
+                                <h3>Average Rating</h3>
+                                <p>4.8</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Courses Section -->
+                <section id="courses" class="content-section" style="display: none;">
+                    <div class="section-header">
+                        <h2>My Courses</h2>
+                        <button class="add-course-btn" onclick="document.querySelector('[href=\'#new-course\']').click()">
+                            <i class="fas fa-plus"></i> Add New Course
+                        </button>
+                    </div>
+                    <div class="courses-grid">
+                        <!-- Course Card -->
+                        <div class="course-card">
+                            <div class="course-image">
+                                <img src="https://via.placeholder.com/300x200" alt="Web Development">
+                                <div class="course-status published">Published</div>
+                            </div>
+                            <div class="course-details">
+                                <h3>Complete Web Development Bootcamp</h3>
+                                <div class="course-meta">
+                                    <span><i class="fas fa-users"></i> 256 Students</span>
+                                    <span><i class="fas fa-star"></i> 4.8</span>
+                                </div>
+                                <div class="course-actions">
+                                    <button class="edit-btn"><i class="fas fa-edit"></i> Edit</button>
+                                    <button class="delete-btn"><i class="fas fa-trash"></i> Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add more course cards -->
+                    </div>
+                </section>
+
+                <!-- New Course Section -->
+                <section id="new-course" class="content-section" style="display: none;">
+                    <h2>Create New Course</h2>
+                    <form class="course-form">
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label>Course Title</label>
+                                <input type="text" placeholder="Enter course title" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Course Subtitle</label>
+                                <input type="text" placeholder="Enter course subtitle">
+                            </div>
+                            <div class="form-group">
+                                <label>Main Category</label>
+                                <select required>
+                                    <option value="">Select main category</option>
+                                    <option value="development">Development</option>
+                                    <option value="design">Design</option>
+                                    <option value="business">Business</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Sub Category</label>
+                                <select required>
+                                    <option value="">Select sub category</option>
+                                    <option value="web-dev">Web Development</option>
+                                    <option value="mobile-dev">Mobile Development</option>
+                                    <option value="game-dev">Game Development</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Price ($)</label>
+                                <input type="number" min="0" step="0.01" placeholder="Enter course price">
+                            </div>
+                            <div class="form-group">
+                                <label>Level</label>
+                                <select required>
+                                    <option value="beginner">Beginner</option>
+                                    <option value="intermediate">Intermediate</option>
+                                    <option value="advanced">Advanced</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Course Description</label>
+                            <textarea rows="4" placeholder="Enter course description" required></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Course Image</label>
+                            <div class="image-upload">
+                                <input type="file" accept="image/*" id="courseImage">
+                                <label for="courseImage">
+                                    <i class="fas fa-cloud-upload-alt"></i>
+                                    <span>Drop your image here or click to browse</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="course-content-section">
+                            <h3>Course Content</h3>
+                            <div class="sections-container">
+                                <div class="course-section">
+                                    <div class="section-header">
+                                        <input type="text" placeholder="Section Title">
+                                        <button type="button" class="add-lecture-btn">
+                                            <i class="fas fa-plus"></i> Add Lecture
+                                        </button>
+                                    </div>
+                                    <div class="lectures-container">
+                                        <div class="lecture-item">
+                                            <input type="text" placeholder="Lecture Title">
+                                            <input type="file" accept="video/*">
+                                            <button type="button" class="remove-lecture-btn">
+                                                <i class="fas fa-trash"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="button" class="add-section-btn">
+                                <i class="fas fa-plus"></i> Add New Section
+                            </button>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="button" class="save-draft-btn">Save as Draft</button>
+                            <button type="submit" class="publish-btn">Publish Course</button>
+                        </div>
+                    </form>
+                </section>
+
+                <!-- Settings Section -->
+                <section id="settings" class="content-section" style="display: none;">
+                    <h2>Profile Settings</h2>
+                    <form class="settings-form">
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label>Full Name</label>
+                                <input type="text" value="Mahmoud Shoukry" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Email</label>
+                                <input type="email" value="mahmoud@example.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Phone</label>
+                                <input type="tel" value="+20 123 456 789">
+                            </div>
+                            <div class="form-group">
+                                <label>Specialization</label>
+                                <input type="text" value="Web Development">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Bio</label>
+                            <textarea rows="4">Experienced web developer with over 10 years of industry experience...</textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Social Links</label>
+                            <div class="social-links">
+                                <input type="url" placeholder="LinkedIn URL">
+                                <input type="url" placeholder="Twitter URL">
+                                <input type="url" placeholder="Website URL">
+                            </div>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="submit" class="save-btn">Save Changes</button>
+                        </div>
+                    </form>
+                </section>
+            </div>
+        </div>
+    </main>
+<!-- Edit Course Modal -->
+<div class="modal" id="editCourseModal">
+    <div class="modal-content large-modal">
+        <div class="modal-header">
+            <h2>Edit Course</h2>
+            <button class="close-modal">&times;</button>
+        </div>
+        <form class="edit-course-form">
+            <div class="form-grid">
+                <div class="form-group">
+                    <label>Course Title</label>
+                    <input type="text" name="courseTitle" required>
+                </div>
+                <div class="form-group">
+                    <label>Course Subtitle</label>
+                    <input type="text" name="courseSubtitle">
+                </div>
+                <div class="form-group">
+                    <label>Main Category</label>
+                    <select name="mainCategory" required>
+                        <option value="">Select main category</option>
+                        <option value="development">Development</option>
+                        <option value="design">Design</option>
+                        <option value="business">Business</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Sub Category</label>
+                    <select name="subCategory" required>
+                        <option value="">Select sub category</option>
+                        <option value="web-dev">Web Development</option>
+                        <option value="mobile-dev">Mobile Development</option>
+                        <option value="game-dev">Game Development</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Price ($)</label>
+                    <input type="number" name="price" min="0" step="0.01">
+                </div>
+                <div class="form-group">
+                    <label>Level</label>
+                    <select name="level" required>
+                        <option value="beginner">Beginner</option>
+                        <option value="intermediate">Intermediate</option>
+                        <option value="advanced">Advanced</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Course Description</label>
+                <textarea name="description" rows="4" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label>Course Image</label>
+                <div class="image-upload">
+                    <input type="file" accept="image/*" id="editCourseImage">
+                    <label for="editCourseImage">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                        <span>Drop your image here or click to browse</span>
+                    </label>
+                    <div class="preview-image"></div>
+                </div>
+            </div>
+
+            <div class="form-actions">
+                <button type="button" class="cancel-btn">Cancel</button>
+                <button type="submit" class="save-btn">Save Changes</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+    <script src="js/instructor-dashboard.js"></script>
+</body>
+</html>

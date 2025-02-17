@@ -1,0 +1,402 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Learning Platform</title>
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/instructors.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/courses.css">
+    <link rel="stylesheet" href="css/statistics.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+ <!-- Header Section -->
+ <header class="header">
+    <div class="container">
+        <div class="logo">
+            <a href="index.html">
+                <img src="https://cdn-icons-png.flaticon.com/512/2436/2436874.png" alt="EduPro Logo">
+                <span>EduPro</span>
+            </a>
+        </div>
+        
+        <!-- Mobile Menu Button -->
+        <div class="mobile-menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="index.html"  class="active">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="the_instructors.html">Instructors</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <!-- Auth Buttons or User Profile -->
+        <div class="auth-buttons">
+            <div class="guest-buttons">
+                <button class="btn-login" onclick="window.location.href='login.html'">Log In</button>
+                <button class="btn-register" onclick="window.location.href='register.html'">Sign Up</button>
+            </div>
+            <div class="user-profile" style="display: none;">
+                <div class="user-menu">
+                    <img src="https://github.com/mahmoudshoukry87.png" alt="User Profile" class="profile-pic">
+                    <span class="username">mahmoudshoukry87</span>
+                    <i class="fas fa-chevron-down"></i>
+                    <div class="dropdown-menu">
+                        <a href="profile.html"><i class="fas fa-user"></i> My Profile</a>
+                        <a href="my-courses.html"><i class="fas fa-graduation-cap"></i> My Courses</a>
+                        <a href="settings.html"><i class="fas fa-cog"></i> Settings</a>
+                        <a href="#" class="logout"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="swiper hero-slider">
+            <div class="swiper-wrapper">
+                <!-- Hero Slide 1 -->
+                <div class="swiper-slide">
+                    <div class="slide-content">
+                        <div class="overlay"></div>
+                        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3" alt="Education">
+                        <div class="slide-text">
+                            <h1>Start Your Learning Journey Today</h1>
+                            <p>Access thousands of courses from professional instructors</p>
+                            <button class="cta-button">Explore Courses</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Hero Slide 2 -->
+                <div class="swiper-slide">
+                    <div class="slide-content">
+                        <div class="overlay"></div>
+                        <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655" alt="Learning">
+                        <div class="slide-text">
+                            <h1>Learn From The Best</h1>
+                            <p>Expert instructors from around the world</p>
+                            <button class="cta-button">Join Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Hero Slide 3 -->
+                <div class="swiper-slide">
+                    <div class="slide-content">
+                        <div class="overlay"></div>
+                        <img src="https://images.unsplash.com/photo-1513258496099-48168024aec0" alt="Online Education">
+                        <div class="slide-text">
+                            <h1>Flexible Learning Schedule</h1>
+                            <p>Learn at your own pace, anywhere, anytime</p>
+                            <button class="cta-button">Get Started</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            
+            <!-- Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <!-- Instructors Section -->
+    <section class="instructors-section">
+        <div class="container">
+            <h2 class="section-title">Featured Instructors</h2>
+            <div class="swiper instructors-slider">
+                <div class="swiper-wrapper">
+                    <!-- Instructor 1 -->
+                    <div class="swiper-slide">
+                        <div class="instructor-card">
+                            <div class="instructor-img">
+                                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="John Smith">
+                            </div>
+                            <div class="instructor-info">
+                                <h3>John Smith</h3>
+                                <p class="specialty">Web Development</p>
+                                <div class="stats">
+                                    <span><i class="fas fa-star"></i> 4.9</span>
+                                    <span><i class="fas fa-user-graduate"></i> 12.5K</span>
+                                </div>
+                                <div class="social-links">
+                                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Instructor 2 -->
+                    <div class="swiper-slide">
+                        <div class="instructor-card">
+                            <div class="instructor-img">
+                                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah Wilson">
+                            </div>
+                            <div class="instructor-info">
+                                <h3>Sarah Wilson</h3>
+                                <p class="specialty">UI/UX Design</p>
+                                <div class="stats">
+                                    <span><i class="fas fa-star"></i> 4.8</span>
+                                    <span><i class="fas fa-user-graduate"></i> 8.3K</span>
+                                </div>
+                                <div class="social-links">
+                                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 10 more instructors... -->
+                </div>
+                
+                <!-- Navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                
+                <!-- Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655" alt="About EduPro">
+                    <div class="experience-badge">
+                        <span class="years">15+</span>
+                        <span class="text">Years of Experience</span>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h6 class="sub-title">ABOUT US</h6>
+                    <h2 class="title">Transform Your Life Through Quality Education</h2>
+                    <p class="description">
+                        EduPro is a leading online learning platform dedicated to providing high-quality education to students worldwide. Our mission is to make education accessible, engaging, and effective for everyone.
+                    </p>
+                    <div class="features">
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Expert Instructors</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Lifetime Access</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Remote Learning</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Self Development</span>
+                        </div>
+                    </div>
+                    <a href="about.html" class="learn-more-btn">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Courses Section -->
+    <section class="courses-section">
+        <div class="container">
+            <h2 class="section-title">Featured Courses</h2>
+            <div class="swiper courses-slider">
+                <div class="swiper-wrapper">
+                    <!-- Course 1 -->
+                    <div class="swiper-slide">
+                        <div class="course-card">
+                            <div class="course-img">
+                                <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3" alt="Web Development">
+                                <div class="course-tag">Popular</div>
+                            </div>
+                            <div class="course-info">
+                                <h3>Complete Web Development</h3>
+                                <div class="instructor">
+                                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="John Smith">
+                                    <span>John Smith</span>
+                                </div>
+                                <div class="stats">
+                                    <span><i class="fas fa-star"></i> 4.9</span>
+                                    <span><i class="fas fa-user-graduate"></i> 15.4K</span>
+                                    <span><i class="fas fa-clock"></i> 42h</span>
+                                </div>
+                                <div class="price-row">
+                                    <div class="price">$89.99</div>
+                                    <button class="enroll-btn">Enroll Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Course 2 -->
+                    <div class="swiper-slide">
+                        <div class="course-card">
+                            <div class="course-img">
+                                <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0" alt="UI/UX Design">
+                                <div class="course-tag">Bestseller</div>
+                            </div>
+                            <div class="course-info">
+                                <h3>UI/UX Design Masterclass</h3>
+                                <div class="instructor">
+                                    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah Wilson">
+                                    <span>Sarah Wilson</span>
+                                </div>
+                                <div class="stats">
+                                    <span><i class="fas fa-star"></i> 4.8</span>
+                                    <span><i class="fas fa-user-graduate"></i> 12.1K</span>
+                                    <span><i class="fas fa-clock"></i> 38h</span>
+                                </div>
+                                <div class="price-row">
+                                    <div class="price">$79.99</div>
+                                    <button class="enroll-btn">Enroll Now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add more course slides here -->
+                </div>
+                
+                <!-- Navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                
+                <!-- Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="statistics-section">
+        <div class="container">
+            <div class="stats-grid">
+                <!-- Students -->
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3 class="counter">25,000</h3>
+                        <p>Active Students</p>
+                    </div>
+                </div>
+
+                <!-- Experience -->
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3 class="counter">15</h3>
+                        <p>Years Experience</p>
+                    </div>
+                </div>
+
+                <!-- Courses -->
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3 class="counter">1,500</h3>
+                        <p>Total Courses</p>
+                    </div>
+                </div>
+
+                <!-- Instructors -->
+                <div class="stat-item">
+                    <div class="stat-icon">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3 class="counter">200</h3>
+                        <p>Expert Instructors</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer Section -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <!-- Logo & About -->
+            <div class="footer-about">
+                <div class="footer-logo">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2436/2436874.png" alt="EduPro Logo">
+                    <span>EduPro</span>
+                </div>
+                <p>Empowering learners worldwide through quality online education and professional development.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="instructor.html">Become Instructor</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="footer-contact">
+                <h3>Contact Info</h3>
+                <ul>
+                    <li><i class="fas fa-phone"></i> +1 234 567 890</li>
+                    <li><i class="fas fa-envelope"></i> info@edupro.com</li>
+                    <li><i class="fas fa-map-marker-alt"></i> 123 Education St., Knowledge City</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="footer-bottom">
+            <p>&copy; 2025 EduPro. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+    <!-- JavaScript Files -->
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/hero.js"></script>
+    <script src="js/instructors.js"></script>
+    <script src="js/courses.js"></script>
+    <script src="js/statistics.js"></script>
+    <script src="js/header.js"></script>
+
+</body>
+</html>

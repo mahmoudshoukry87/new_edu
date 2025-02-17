@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Web Development Bootcamp - EduPro</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/course-single.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2436/2436874.png" alt="EduPro Logo">
+                    <span>EduPro</span>
+                </a>
+            </div>
+            
+            <!-- Mobile Menu Button -->
+            <div class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+    
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="the_instructors.html">Instructors</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+    
+            <!-- Auth Buttons or User Profile -->
+            <div class="auth-buttons">
+                <div class="guest-buttons">
+                    <button class="btn-login" onclick="window.location.href='login.html'">Log In</button>
+                    <button class="btn-register" onclick="window.location.href='register.html'">Sign Up</button>
+                </div>
+                <div class="user-profile" style="display: none;">
+                    <div class="user-menu">
+                        <img src="https://github.com/mahmoudshoukry87.png" alt="User Profile" class="profile-pic">
+                        <span class="username">mahmoudshoukry87</span>
+                        <i class="fas fa-chevron-down"></i>
+                        <div class="dropdown-menu">
+                            <a href="profile.html"><i class="fas fa-user"></i> My Profile</a>
+                            <a href="my-courses.html"><i class="fas fa-graduation-cap"></i> My Courses</a>
+                            <a href="settings.html"><i class="fas fa-cog"></i> Settings</a>
+                            <a href="#" class="logout"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Course Content Section -->
+    <main class="course-content">
+        <div class="container">
+            <div class="course-title">
+                <h1>Complete Web Development Bootcamp</h1>
+            </div>
+            
+            <div class="course-player-container">
+                <!-- Video Player Section -->
+                <div class="video-section">
+                    <div class="video-container">
+                        <iframe id="videoPlayer" 
+                        src="https://www.youtube.com/embed/dQw4w9WgXcQ?enablejsapi=1"
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+
+                <!-- Course Curriculum -->
+                <div class="curriculum-section">
+                    <div class="curriculum-header">
+                        <h2>Course Content</h2>
+                        <div class="progress-info">
+                            <span>0/20 Completed</span>
+                        </div>
+                    </div>
+
+                    <div class="curriculum-content">
+                        <!-- Section 1 -->
+                        <div class="course-section active">
+                            <div class="section-header">
+                                <div class="section-header-left">
+                                    <i class="fas fa-chevron-down toggle-icon"></i>
+                                    <h3>Section 1: Introduction</h3>
+                                </div>
+                                <span class="video-count">4 videos</span>
+                            </div>
+                            <div class="section-content">
+                                <div class="video-item" data-video="dQw4w9WgXcQ" data-section="0" data-index="0">
+                                    <i class="fas fa-play-circle"></i>
+                                    <span class="video-title">1.1 Course Introduction</span>
+                                    <span class="duration">5:30</span>
+                                </div>
+                                <div class="video-item" data-video="dQw4w9WgXcQ" data-section="0" data-index="1">
+                                    <i class="fas fa-play-circle"></i>
+                                    <span class="video-title">1.2 Course Overview</span>
+                                    <span class="duration">5:30</span>
+                                </div>
+                                <div class="video-item" data-video="dQw4w9WgXcQ" data-section="0" data-index="2">
+                                    <i class="fas fa-play-circle"></i>
+                                    <span class="video-title">1.3 Setting Up Environment</span>
+                                    <span class="duration">5:30</span>
+                                </div>
+                                <div class="video-item" data-video="dQw4w9WgXcQ" data-section="0" data-index="3">
+                                    <i class="fas fa-play-circle"></i>
+                                    <span class="video-title">1.4 Getting Started</span>
+                                    <span class="duration">5:30</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Section 2 -->
+                        <div class="course-section">
+                            <div class="section-header">
+                                <div class="section-header-left">
+                                    <i class="fas fa-chevron-down toggle-icon"></i>
+                                    <h3>Section 2: HTML Fundamentals</h3>
+                                </div>
+                                <span class="video-count">4 videos</span>
+                            </div>
+                            <div class="section-content">
+                                <div class="video-item" data-video="dQw4w9WgXcQ" data-section="1" data-index="0">
+                                    <i class="fas fa-play-circle"></i>
+                                    <span class="video-title">2.1 HTML Basics</span>
+                                    <span class="duration">5:30</span>
+                                </div>
+                                <div class="video-item" data-video="dQw4w9WgXcQ" data-section="1" data-index="1">
+                                    <i class="fas fa-play-circle"></i>
+                                    <span class="video-title">2.2 HTML Structure</span>
+                                    <span class="duration">5:30</span>
+                                </div>
+                                <div class="video-item" data-video="dQw4w9WgXcQ" data-section="1" data-index="2">
+                                    <i class="fas fa-play-circle"></i>
+                                    <span class="video-title">2.3 HTML Elements</span>
+                                    <span class="duration">5:30</span>
+                                </div>
+                                <div class="video-item" data-video="dQw4w9WgXcQ" data-section="1" data-index="3">
+                                    <i class="fas fa-play-circle"></i>
+                                    <span class="video-title">2.4 HTML Forms</span>
+                                    <span class="duration">5:30</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Section 3 -->
+                        <div class="course-section">
+                            <div class="section-header">
+                                <div class="section-header-left">
+                                    <i class="fas fa-chevron-down toggle-icon"></i>
+                                    <h3>Section 3: CSS Styling</h3>
+                                </div>
+                                <span class="video-count">4 videos</span>
+                            </div>
+                            <div class="section-content">
+                                <div class="video-item" data-video="dQw4w9WgXcQ" data-section="2" data-index="0">
+                                    <i class="fas fa-play-circle"></i>
+                                    <span class="video-title">3.1 CSS Introduction</span>
+                                    <span class="duration">5:30</span>
+                                </div>
+                                <div class="video-item" data-video="dQw4w9WgXcQ" data-section="2" data-index="1">
+                                    <i class="fas fa-play-circle"></i>
+                                    <span class="video-title">3.2 CSS Selectors</span>
+                                    <span class="duration">5:30</span>
+                                </div>
+                                <div class="video-item" data-video="dQw4w9WgXcQ" data-section="2" data-index="2">
+                                    <i class="fas fa-play-circle"></i>
+                                    <span class="video-title">3.3 CSS Layout</span>
+                                    <span class="duration">5:30</span>
+                                </div>
+                                <div class="video-item" data-video="dQw4w9WgXcQ" data-section="2" data-index="3">
+                                    <i class="fas fa-play-circle"></i>
+                                    <span class="video-title">3.4 CSS Flexbox</span>
+                                    <span class="duration">5:30</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Section 4 -->
+                        <div class="course-section">
+                            <div class="section-header">
+                                <div class="section-header-left">
+                                    <i class="fas fa-chevron-down toggle-icon"></i>
+                                    <h3>Section 4: JavaScript Basics</h3>
+                                </div>
+                                <span class="video-count">4 videos</span>
+                            </div>
+                            <div class="section-content">
+                                <div class="video-item" data-video="dQw4w9WgXcQ" data-section="3" data-index="0">
+                                    <i class="fas fa-play-circle"></i>
+                                    <span class="video-title">4.1 JavaScript Intro</span>
+                                    <span class="duration">5:30</span>
+                                </div>
+                                <div class="video-item" data-video="dQw4w9WgXcQ" data-section="3" data-index="1">
+                                    <i class="fas fa-play-circle"></i>
+                                    <span class="video-title">4.2 Variables & Data Types</span>
+                                    <span class="duration">5:30</span>
+                                </div>
+                                <div class="video-item" data-video="dQw4w9WgXcQ" data-section="3" data-index="2">
+                                    <i class="fas fa-play-circle"></i>
+                                    <span class="video-title">4.3 Functions</span>
+                                    <span class="duration">5:30</span>
+                                </div>
+                                <div class="video-item" data-video="dQw4w9WgXcQ" data-section="3" data-index="3">
+                                    <i class="fas fa-play-circle"></i>
+                                    <span class="video-title">4.4 DOM Manipulation</span>
+                                    <span class="duration">5:30</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Section 5 -->
+                        <div class="course-section">
+                            <div class="section-header">
+                                <div class="section-header-left">
+                                    <i class="fas fa-chevron-down toggle-icon"></i>
+                                    <h3>Section 5: Final Project</h3>
+                                </div>
+                                <span class="video-count">4 videos</span>
+                            </div>
+                            <div class="section-content">
+                                <div class="video-item" data-video="dQw4w9WgXcQ" data-section="4" data-index="0">
+                                    <i class="fas fa-play-circle"></i>
+                                    <span class="video-title">5.1 Project Overview</span>
+                                    <span class="duration">5:30</span>
+                                </div>
+                                <div class="video-item" data-video="dQw4w9WgXcQ" data-section="4" data-index="1">
+                                    <i class="fas fa-play-circle"></i>
+                                    <span class="video-title">5.2 Project Setup</span>
+                                    <span class="duration">5:30</span>
+                                </div>
+                                <div class="video-item" data-video="dQw4w9WgXcQ" data-section="4" data-index="2">
+                                    <i class="fas fa-play-circle"></i>
+                                    <span class="video-title">5.3 Implementation</span>
+                                    <span class="duration">5:30</span>
+                                </div>
+                                <div class="video-item" data-video="dQw4w9WgXcQ" data-section="4" data-index="3">
+                                    <i class="fas fa-play-circle"></i>
+                                    <span class="video-title">5.4 Deployment</span>
+                                    <span class="duration">5:30</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+<!-- أضف هذا بعد video-section مباشرة -->
+
+
+<!-- Course Tabs Section -->
+<!-- Add this after video-section -->
+<div class="course-purchase">
+    <div class="price-box">
+        <div class="price">
+            <span class="currency">EGP</span>
+            <span class="amount">999</span>
+        </div>
+        <button class="btn-purchase">
+            <i class="fas fa-shopping-cart"></i>
+            Purchase Now
+        </button>
+    </div>
+</div>
+
+<!-- Course Tabs Section -->
+<div class="course-tabs">
+    <div class="tabs-navigation">
+        <button class="tab-btn active" data-tab="description">
+            <i class="fas fa-info-circle"></i>
+            Course Description
+        </button>
+        <button class="tab-btn" data-tab="instructor">
+            <i class="fas fa-chalkboard-teacher"></i>
+            Instructor
+        </button>
+        <button class="tab-btn" data-tab="target">
+            <i class="fas fa-bullseye"></i>
+            Target Audience
+        </button>
+        <button class="tab-btn" data-tab="attachments">
+            <i class="fas fa-paperclip"></i>
+            Attachments
+        </button>
+        <button class="tab-btn" data-tab="comments">
+            <i class="fas fa-comments"></i>
+            Comments
+        </button>
+    </div>
+
+    <div class="tabs-content">
+        <!-- Course Description Tab -->
+        <div class="tab-pane active" id="description">
+            <h3>Course Description</h3>
+            <p>This comprehensive course covers web development from basics to advanced level. You will learn:</p>
+            <ul>
+                <li>HTML5 & CSS3</li>
+                <li>JavaScript & ES6+</li>
+                <li>React.js</li>
+                <li>Node.js & Express</li>
+                <li>MongoDB</li>
+            </ul>
+        </div>
+
+<!-- Instructor Tab -->
+<div class="tab-pane" id="instructor">
+    <div class="instructor-profile">
+        <div class="instructor-info">
+            <img src="images/instructor/mahmoudshoukry87.jpg" alt="Mahmoud Shoukry">
+            <div class="instructor-details">
+                <h3>Mahmoud Shoukry</h3>
+                <p class="instructor-title">Professional Web Developer | Technical Trainer</p>
+                <p class="instructor-stats">
+                    <span><i class="fas fa-star"></i> 4.8 Instructor Rating</span>
+                    <span><i class="fas fa-user-graduate"></i> 5,234 Students</span>
+                    <span><i class="fas fa-play-circle"></i> 12 Courses</span>
+                </p>
+                <div class="social-links">
+                    <a href="https://linkedin.com/in/mahmoudshoukry87" target="_blank" title="LinkedIn Profile">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/mahmoudshoukry87" target="_blank" title="GitHub Profile">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://twitter.com/mahmoudshoukry87" target="_blank" title="Twitter Profile">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://mahmoudshoukry.com" target="_blank" title="Personal Website">
+                        <i class="fas fa-globe"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="instructor-bio">
+            <h4>About the Instructor</h4>
+            <p>With over 8 years of experience in web development and technical training, Mahmoud Shoukry specializes in creating comprehensive web development courses that bridge the gap between theory and practical application.</p>
+            <div class="instructor-expertise">
+                <h4>Expertise Areas:</h4>
+                <ul>
+                    <li><i class="fas fa-check-circle"></i> Full Stack Web Development</li>
+                    <li><i class="fas fa-check-circle"></i> Modern JavaScript & ES6+</li>
+                    <li><i class="fas fa-check-circle"></i> React.js & Node.js</li>
+                    <li><i class="fas fa-check-circle"></i> Database Design</li>
+                    <li><i class="fas fa-check-circle"></i> Web Security</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+        <!-- Target Audience Tab -->
+        <div class="tab-pane" id="target">
+            <h3>Target Audience</h3>
+            <ul class="target-list">
+                <li>Beginners in Web Development</li>
+                <li>Developers looking to update their skills</li>
+                <li>Computer Science Students</li>
+                <li>Career Switchers interested in Programming</li>
+            </ul>
+        </div>
+
+        <!-- Attachments Tab -->
+        <div class="tab-pane" id="attachments">
+            <h3>Attachments</h3>
+            <div class="attachments-list">
+                <div class="attachment-item">
+                    <i class="fas fa-file-pdf"></i>
+                    <span>Student Guide.pdf</span>
+                    <a href="#" class="btn-download">Download</a>
+                </div>
+                <div class="attachment-item">
+                    <i class="fas fa-file-archive"></i>
+                    <span>Project Files.zip</span>
+                    <a href="#" class="btn-download">Download</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Comments Tab -->
+        <div class="tab-pane" id="comments">
+            <div class="comments-section">
+                <h3>Comments</h3>
+                <div class="comment-form">
+                    <textarea placeholder="Write your comment here..."></textarea>
+                    <button class="btn-submit">Submit Comment</button>
+                </div>
+                <div class="comments-list">
+                    <!-- Comment Example -->
+                    <div class="comment">
+                        <img src="path/to/user-avatar.jpg" alt="User Avatar">
+                        <div class="comment-content">
+                            <div class="comment-header">
+                                <h4>Username</h4>
+                                <span class="comment-date">3 days ago</span>
+                            </div>
+                            <p>Comment content appears here...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Logo & About -->
+                <div class="footer-about">
+                    <div class="footer-logo">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2436/2436874.png" alt="EduPro Logo">
+                        <span>EduPro</span>
+                    </div>
+                    <p>Empowering learners worldwide through quality online education and professional development.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+    
+                <!-- Quick Links -->
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="courses.html">Courses</a></li>
+                        <li><a href="instructor.html">Become Instructor</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Contact Info -->
+                <div class="footer-contact">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> +1 234 567 890</li>
+                        <li><i class="fas fa-envelope"></i> info@edupro.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Education St., Knowledge City</li>
+                    </ul>
+                </div>
+            </div>
+    
+            <!-- Copyright -->
+            <div class="footer-bottom">
+                <p>&copy; 2025 EduPro. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/course-single.js"></script>
+    <script src="js/modal.js"></script>
+</body>
+</html>

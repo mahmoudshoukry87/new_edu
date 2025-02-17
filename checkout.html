@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - EduPro</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/checkout.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+ <!-- Header Section -->
+ <header class="header">
+    <div class="container">
+        <div class="logo">
+            <a href="index.html">
+                <img src="https://cdn-icons-png.flaticon.com/512/2436/2436874.png" alt="EduPro Logo">
+                <span>EduPro</span>
+            </a>
+        </div>
+        
+        <!-- Mobile Menu Button -->
+        <div class="mobile-menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="the_instructors.html">Instructors</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <!-- Auth Buttons or User Profile -->
+        <div class="auth-buttons">
+            <div class="guest-buttons">
+                <button class="btn-login" onclick="window.location.href='login.html'">Log In</button>
+                <button class="btn-register" onclick="window.location.href='register.html'">Sign Up</button>
+            </div>
+            <div class="user-profile" style="display: none;">
+                <div class="user-menu">
+                    <img src="https://github.com/mahmoudshoukry87.png" alt="User Profile" class="profile-pic">
+                    <span class="username">mahmoudshoukry87</span>
+                    <i class="fas fa-chevron-down"></i>
+                    <div class="dropdown-menu">
+                        <a href="profile.html"><i class="fas fa-user"></i> My Profile</a>
+                        <a href="my-courses.html"><i class="fas fa-graduation-cap"></i> My Courses</a>
+                        <a href="settings.html"><i class="fas fa-cog"></i> Settings</a>
+                        <a href="#" class="logout"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+    <main class="checkout-section">
+        <div class="container">
+            <div class="checkout-header">
+                <h1>Checkout</h1>
+                <div class="checkout-steps">
+                    <div class="step active">
+                        <span class="step-number">1</span>
+                        <span class="step-text">Payment Details</span>
+                    </div>
+                    <div class="step">
+                        <span class="step-number">2</span>
+                        <span class="step-text">Confirmation</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="checkout-content">
+                <!-- Payment Form -->
+                <div class="payment-section">
+                    <form id="paymentForm" class="payment-form">
+                        <!-- Payment Methods -->
+                        <div class="payment-methods">
+                            <h3>Payment Method</h3>
+                            <div class="methods-grid">
+                                <label class="payment-method">
+                                    <input type="radio" name="paymentMethod" value="card" checked>
+                                    <div class="method-content">
+                                        <i class="fas fa-credit-card"></i>
+                                        <span>Credit/Debit Card</span>
+                                    </div>
+                                </label>
+                                <label class="payment-method">
+                                    <input type="radio" name="paymentMethod" value="paypal">
+                                    <div class="method-content">
+                                        <i class="fab fa-paypal"></i>
+                                        <span>PayPal</span>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Card Details -->
+                        <div id="cardDetails" class="card-details">
+                            <h3>Card Information</h3>
+                            <div class="form-group">
+                                <label>Card Number</label>
+                                <div class="input-group">
+                                    <input type="text" id="cardNumber" placeholder="1234 5678 9012 3456" maxlength="19" required>
+                                    <div class="card-icons">
+                                        <i class="fab fa-cc-visa"></i>
+                                        <i class="fab fa-cc-mastercard"></i>
+                                        <i class="fab fa-cc-amex"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label>Expiration Date</label>
+                                    <div class="input-group">
+                                        <input type="text" id="expDate" placeholder="MM/YY" maxlength="5" required>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label>CVC/CVV</label>
+                                    <div class="input-group">
+                                        <input type="text" id="cvv" placeholder="123" maxlength="4" required>
+                                        <i class="fas fa-question-circle cvv-info" title="3 or 4 digit security code"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Card Holder Name</label>
+                                <div class="input-group">
+                                    <input type="text" id="cardName" placeholder="Name on card" required>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Billing Address -->
+                        <div class="billing-address">
+                            <h3>Billing Address</h3>
+                            <div class="form-group">
+                                <label>Country/Region</label>
+                                <select id="country" required>
+                                    <option value="">Select country</option>
+                                    <option value="EG">Egypt</option>
+                                    <option value="US">United States</option>
+                                    <option value="GB">United Kingdom</option>
+                                    <!-- Add more countries -->
+                                </select>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label>First Name</label>
+                                    <input type="text" id="firstName" required>
+                                </div>
+                                <div class="form-group">
+                                    <label>Last Name</label>
+                                    <input type="text" id="lastName" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Address</label>
+                                <input type="text" id="address" placeholder="Street address" required>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label>City</label>
+                                    <input type="text" id="city" required>
+                                </div>
+                                <div class="form-group">
+                                    <label>State/Province</label>
+                                    <input type="text" id="state" required>
+                                </div>
+                                <div class="form-group">
+                                    <label>ZIP/Postal Code</label>
+                                    <input type="text" id="zip" required>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Order Summary -->
+                <div class="order-summary">
+                    <div class="summary-box">
+                        <h3>Order Summary</h3>
+                        <div class="summary-items">
+                            <!-- Items will be populated by JavaScript -->
+                        </div>
+                        
+                        <div class="summary-totals">
+                            <div class="summary-row">
+                                <span>Subtotal:</span>
+                                <span class="subtotal">$299.97</span>
+                            </div>
+                            <div class="summary-row">
+                                <span>Discount:</span>
+                                <span class="discount">-$150.00</span>
+                            </div>
+                            <div class="summary-row total">
+                                <span>Total:</span>
+                                <span class="total-price">$149.97</span>
+                            </div>
+                        </div>
+
+                        <button type="submit" form="paymentForm" class="pay-button">
+                            <i class="fas fa-lock"></i>
+                            Pay Now
+                        </button>
+
+                        <div class="secure-checkout">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Secure Checkout</span>
+                            <div class="payment-methods">
+                                <i class="fab fa-cc-visa"></i>
+                                <i class="fab fa-cc-mastercard"></i>
+                                <i class="fab fa-cc-amex"></i>
+                                <i class="fab fa-cc-paypal"></i>
+                            </div>
+                        </div>
+
+                        <div class="guarantee">
+                            <i class="fas fa-undo"></i>
+                            <p>30-Day Money-Back Guarantee</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+
+    <script src="js/checkout.js"></script>
+</body>
+</html>

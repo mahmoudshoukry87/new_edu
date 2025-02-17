@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses - EduPro</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/courses-page.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/filters.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+ <!-- Header Section -->
+<header class="header">
+    <div class="container">
+        <div class="logo">
+            <a href="index.html">
+                <img src="https://cdn-icons-png.flaticon.com/512/2436/2436874.png" alt="EduPro Logo">
+                <span>EduPro</span>
+            </a>
+        </div>
+        
+        <!-- Mobile Menu Button -->
+        <div class="mobile-menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html"  class="active">Courses</a></li>
+                <li><a href="the_instructors.html">Instructors</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <!-- Auth Buttons or User Profile -->
+        <div class="auth-buttons">
+            <div class="guest-buttons">
+                <button class="btn-login" onclick="window.location.href='login.html'">Log In</button>
+                <button class="btn-register" onclick="window.location.href='register.html'">Sign Up</button>
+            </div>
+            <div class="user-profile" style="display: none;">
+                <div class="user-menu">
+                    <img src="https://github.com/mahmoudshoukry87.png" alt="User Profile" class="profile-pic">
+                    <span class="username">mahmoudshoukry87</span>
+                    <i class="fas fa-chevron-down"></i>
+                    <div class="dropdown-menu">
+                        <a href="profile.html"><i class="fas fa-user"></i> My Profile</a>
+                        <a href="my-courses.html"><i class="fas fa-graduation-cap"></i> My Courses</a>
+                        <a href="settings.html"><i class="fas fa-cog"></i> Settings</a>
+                        <a href="#" class="logout"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+    <!-- Main Content -->
+    <main class="courses-section">
+        <div class="container">
+            <div class="courses-header">
+                <h1>All Courses</h1>
+                <div class="courses-count">3 courses available</div>
+            </div>
+
+            <div class="courses-container">
+                <!-- Filters Sidebar -->
+                <aside class="filters-sidebar">
+                    <div class="filters-header">
+                        <h3>Filter Courses</h3>
+                        <button class="clear-filters">Clear All</button>
+                    </div>
+                    
+                    <!-- Main Categories -->
+                    <div class="filter-group">
+                        <h4>Main Categories</h4>
+                        <ul class="main-categories">
+                            <li>
+                                <div class="category-item">
+                                    <span>Development</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <ul class="sub-categories">
+                                    <li>Web Development</li>
+                                    <li>Mobile Development</li>
+                                    <li>Game Development</li>
+                                    <li>Database</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div class="category-item">
+                                    <span>Design</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                                <ul class="sub-categories">
+                                    <li>UI/UX Design</li>
+                                    <li>Graphic Design</li>
+                                    <li>3D & Animation</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Instructors Filter -->
+                    <div class="filter-group">
+                        <h4>Instructors</h4>
+                        <div class="search-instructor">
+                            <input type="text" placeholder="Search instructor">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <ul class="instructors-list">
+                            <li>
+                                <label>
+                                    <input type="checkbox" name="instructor" value="john-doe">
+                                    John Doe
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox" name="instructor" value="sarah-wilson">
+                                    Sarah Wilson
+                                </label>
+                            </li>
+                            <li>
+                                <label>
+                                    <input type="checkbox" name="instructor" value="mike-johnson">
+                                    Mike Johnson
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Sort Options -->
+                    <div class="filter-group">
+                        <h4>Sort By</h4>
+                        <ul class="sort-options">
+                            <li data-sort="popular">Most Popular</li>
+                            <li data-sort="newest">Newest</li>
+                            <li data-sort="price-asc">Price: Low to High</li>
+                            <li data-sort="price-desc">Price: High to Low</li>
+                        </ul>
+                    </div>
+                </aside>
+
+                <!-- Courses Grid -->
+                <div class="courses-grid">
+                    <!-- Course Card 1 -->
+                    <a href="course-single.html" class="course-card">
+                        <div class="course-image">
+                            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400&q=80" alt="Web Development">
+                            <div class="course-overlay">
+                                <span class="category">Development</span>
+                                <span class="price">$99.99</span>
+                            </div>
+                        </div>
+                        <div class="course-content">
+                            <h3>Complete Web Development Bootcamp</h3>
+                            <div class="instructor">
+                                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=100&h=100&q=80" alt="John Doe">
+                                <span>John Doe</span>
+                            </div>
+                            <div class="course-meta">
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.8 (2,567)</span>
+                                </div>
+                                <div class="duration">
+                                    <i class="fas fa-clock"></i>
+                                    <span>42 hours</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Course Card 2 -->
+                    <a href="course-single.html" class="course-card">
+                        <div class="course-image">
+                            <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400&q=80" alt="Mobile Development">
+                            <div class="course-overlay">
+                                <span class="category">Development</span>
+                                <span class="price">$89.99</span>
+                            </div>
+                        </div>
+                        <div class="course-content">
+                            <h3>iOS & Android App Development</h3>
+                            <div class="instructor">
+                                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=100&h=100&q=80" alt="Sarah Wilson">
+                                <span>Sarah Wilson</span>
+                            </div>
+                            <div class="course-meta">
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.7 (1,892)</span>
+                                </div>
+                                <div class="duration">
+                                    <i class="fas fa-clock"></i>
+                                    <span>38 hours</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Course Card 3 -->
+                    <a href="course-single.html" class="course-card">
+                        <div class="course-image">
+                            <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=600&h=400&q=80" alt="UI/UX Design">
+                            <div class="course-overlay">
+                                <span class="category">Design</span>
+                                <span class="price">$79.99</span>
+                            </div>
+                        </div>
+                        <div class="course-content">
+                            <h3>Master UI/UX Design</h3>
+                            <div class="instructor">
+                                <img src="https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=100&h=100&q=80" alt="Mike Johnson">
+                                <span>Mike Johnson</span>
+                            </div>
+                            <div class="course-meta">
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <span>4.9 (3,421)</span>
+                                </div>
+                                <div class="duration">
+                                    <i class="fas fa-clock"></i>
+                                    <span>35 hours</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            <div class="pagination">
+                <button class="prev-page" disabled><i class="fas fa-chevron-left"></i></button>
+                <div class="page-numbers">
+                    <button class="active">1</button>
+                    <button>2</button>
+                    <button>3</button>
+                </div>
+                <button class="next-page"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- Footer content remains the same -->
+    </footer>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <!-- Modal content remains the same -->
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/courses.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/filters.js"></script>
+</body>
+</html>

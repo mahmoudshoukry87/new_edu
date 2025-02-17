@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - EduPro</title>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+
+    <!-- Header Section -->
+
+ <!-- Header Section -->
+ <header class="header">
+    <div class="container">
+        <div class="logo">
+            <a href="index.html">
+                <img src="https://cdn-icons-png.flaticon.com/512/2436/2436874.png" alt="EduPro Logo">
+                <span>EduPro</span>
+            </a>
+        </div>
+        
+        <!-- Mobile Menu Button -->
+        <div class="mobile-menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="the_instructors.html">Instructors</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <!-- Auth Buttons or User Profile -->
+        <div class="auth-buttons">
+            <div class="guest-buttons">
+                <button class="btn-login" onclick="window.location.href='login.html'">Log In</button>
+                <button class="btn-register" onclick="window.location.href='register.html'">Sign Up</button>
+            </div>
+            <div class="user-profile" style="display: none;">
+                <div class="user-menu">
+                    <img src="https://github.com/mahmoudshoukry87.png" alt="User Profile" class="profile-pic">
+                    <span class="username">mahmoudshoukry87</span>
+                    <i class="fas fa-chevron-down"></i>
+                    <div class="dropdown-menu">
+                        <a href="profile.html"><i class="fas fa-user"></i> My Profile</a>
+                        <a href="my-courses.html"><i class="fas fa-graduation-cap"></i> My Courses</a>
+                        <a href="settings.html"><i class="fas fa-cog"></i> Settings</a>
+                        <a href="#" class="logout"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+    <main class="cart-section">
+        <div class="container">
+            <div class="cart-header">
+                <h1>Shopping Cart</h1>
+                <span class="cart-count">3 Courses</span>
+            </div>
+
+            <div class="cart-content">
+                <!-- Cart Items -->
+                <div class="cart-items">
+                    <!-- Cart Item -->
+                    <div class="cart-item">
+                        <div class="item-image">
+                            <img src="https://via.placeholder.com/150" alt="Course Image">
+                        </div>
+                        <div class="item-details">
+                            <h3>Complete Web Development Bootcamp</h3>
+                            <div class="instructor">
+                                <i class="fas fa-chalkboard-teacher"></i>
+                                <span>By John Doe</span>
+                            </div>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>(4.5)</span>
+                            </div>
+                            <div class="course-meta">
+                                <span><i class="fas fa-play-circle"></i> 42 lectures</span>
+                                <span><i class="fas fa-clock"></i> 12.5 hours</span>
+                                <span><i class="fas fa-signal"></i> All levels</span>
+                            </div>
+                        </div>
+                        <div class="item-price">
+                            <div class="price-tag">
+                                <span class="original-price">$99.99</span>
+                                <span class="discounted-price">$49.99</span>
+                            </div>
+                            <button class="remove-item">
+                                <i class="fas fa-trash"></i>
+                                Remove
+                            </button>
+                            <button class="save-for-later">
+                                <i class="fas fa-bookmark"></i>
+                                Save for later
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Cart Summary -->
+                <div class="cart-summary">
+                    <h2>Order Summary</h2>
+                    
+                    <div class="summary-items">
+                        <div class="summary-item">
+                            <span>Original Price:</span>
+                            <span>$299.97</span>
+                        </div>
+                        <div class="summary-item">
+                            <span>Discounts:</span>
+                            <span class="discount">-$150.00</span>
+                        </div>
+                        <div class="summary-item coupon-section">
+                            <div class="coupon-input">
+                                <input type="text" placeholder="Enter coupon code">
+                                <button class="apply-coupon">Apply</button>
+                            </div>
+                        </div>
+                        <div class="summary-total">
+                            <span>Total:</span>
+                            <span class="total-price">$149.97</span>
+                        </div>
+                    </div>
+
+                    <button class="checkout-btn">
+                        <i class="fas fa-lock"></i>
+                        Checkout Securely
+                    </button>
+
+                    <div class="secure-checkout">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>Secure Checkout</span>
+                        <div class="payment-methods">
+                            <i class="fab fa-cc-visa"></i>
+                            <i class="fab fa-cc-mastercard"></i>
+                            <i class="fab fa-cc-paypal"></i>
+                        </div>
+                    </div>
+
+                    <div class="guarantee">
+                        <i class="fas fa-undo"></i>
+                        <p>30-Day Money-Back Guarantee</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Empty Cart State -->
+            <div class="empty-cart" style="display: none;">
+                <div class="empty-cart-content">
+                    <i class="fas fa-shopping-cart"></i>
+                    <h2>Your cart is empty</h2>
+                    <p>Browse our courses and find something you'd like to learn!</p>
+                    <a href="courses.html" class="browse-courses-btn">Browse Courses</a>
+                </div>
+            </div>
+
+            <!-- Saved For Later Section -->
+            <div class="saved-for-later">
+                <h2>Saved for Later</h2>
+                <div class="saved-items">
+                    <!-- Saved items will be displayed here -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+
+    <script src="js/cart.js"></script>
+</body>
+</html>
